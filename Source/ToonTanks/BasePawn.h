@@ -24,16 +24,11 @@ public:
   UPROPERTY(VisibleInstanceOnly)
   int32 VisibleInstanceOnlyInt = 11;
 
-  UPROPERTY(EditDefaultOnly)
-  int32 EditDefaultsOnlyInt = 9;
-
-  UPROPERTY(EditInstanceOnly)
-  int32 EditInstanceOnlyInt = 14;
-
   UPROPERTY(VisibleDefaultsOnly)
-  int32 VisibleDefaultsOnlyInt = 5;
+  int32 VisibleDefaulstOnlyInt = 5;
 
-
+  UPROPERTY(EditDefaultsOnly)
+  int32 EditDefaultsOnlyInt = 9;
 
   UPROPERTY(EditAnywhere)
   float Speed = 100.f;
