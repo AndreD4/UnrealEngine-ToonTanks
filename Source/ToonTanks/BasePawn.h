@@ -28,6 +28,7 @@ public:
   int32 EditInstanceOnlyInt = 14; 
 
   UPROPERTY(EditAnywhere, BlueprintReadWrite)
+  
   float Speed = 100.f;
 
 
