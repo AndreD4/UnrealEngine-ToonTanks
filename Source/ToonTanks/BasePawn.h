@@ -27,7 +27,7 @@ public:
   UPROPERTY(EditInstanceOnly)
   int32 EditInstanceOnlyInt = 14; 
 
-  UPROPERTY(EditAnywhere)
+  UPROPERTY(EditAnywhere, BlueprintReadWrite)
   float Speed = 100.f;
 
 
@@ -36,13 +36,13 @@ protected:
   virtual void BeginPlay() override;
 
 private:
-  UPROPERTY()
+  UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component", meta = (AllowPrivateAccess = "true"))
   class UCapsuleComponent *CapsuleComp;
-  UPROPERTY()
+  UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component", meta = (AllowPrivateAccess = "true"))
   UStaticMeshComponent *BaseMesh;
-  UPROPERTY()
+  UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component", meta = (AllowPrivateAccess = "true"))
   UStaticMeshComponent *TurretMesh;
-  UPROPERTY()
+  UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component", meta = (AllowPrivateAccess = "true"))
   USceneComponent* ProjectileSpawnPoint;
 
   UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Super Duper Varibles", meta = (AllowPrivateAccess = "true"))
