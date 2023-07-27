@@ -15,12 +15,6 @@ public:
   // Sets default values for this pawn's properties
   ABasePawn();
 
-  UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-  int32 VisibleAnywhereInt = 12;
-
-  UPROPERTY(EditAnywhere, BlueprintReadOnly)
-  int32 EditAnywhereInt = 22;
-
   UPROPERTY(VisibleInstanceOnly)
   int32 VisibleInstanceOnlyInt = 11;
 
@@ -33,7 +27,7 @@ public:
   UPROPERTY(EditInstanceOnly)
   int32 EditInstanceOnlyInt = 14; 
 
-  UPROPERTY(EditAnywhere, BlueprintReadWrite)
+  UPROPERTY(EditAnywhere)
   float Speed = 100.f;
 
 
@@ -50,6 +44,12 @@ private:
   UStaticMeshComponent *TurretMesh;
   UPROPERTY()
   USceneComponent* ProjectileSpawnPoint;
+
+  UPROPERTY(VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+  int32 VisibleAnywhereInt = 12;
+
+  UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+  int32 EditAnywhereInt = 22;
 
 public:
   // Called every frame
