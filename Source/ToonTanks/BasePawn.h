@@ -18,7 +18,7 @@ public:
   UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
   int32 VisibleAnywhereInt = 12;
 
-  UPROPERTY(EditAnywhere)
+  UPROPERTY(EditAnywhere, BlueprintReadOnly)
   int32 EditAnywhereInt = 22;
 
   UPROPERTY(VisibleInstanceOnly)
@@ -33,7 +33,7 @@ public:
   UPROPERTY(EditInstanceOnly)
   int32 EditInstanceOnlyInt = 14; 
 
-  UPROPERTY(EditAnywhere)
+  UPROPERTY(EditAnywhere, BlueprintReadWrite)
   float Speed = 100.f;
 
 
