@@ -45,10 +45,10 @@ private:
   UPROPERTY()
   USceneComponent* ProjectileSpawnPoint;
 
-  UPROPERTY(VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+  UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Super Duper Varibles", meta = (AllowPrivateAccess = "true"))
   int32 VisibleAnywhereInt = 12;
 
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Super Duper Varibles", meta = (AllowPrivateAccess = "true"))
   int32 EditAnywhereInt = 22;
 
 public:
