@@ -36,10 +36,7 @@ void ABasePawn::BeginPlay()
 void ABasePawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-  
-  FVector DeltaLocation(0.f);
-  DeltaLocation.X = 2.f;
-  AddActorLocalOffset(DeltaLocation);
+ 
 }
 
 
