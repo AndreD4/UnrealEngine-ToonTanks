@@ -25,10 +25,10 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ATank::Move(float Value)
 {   
-    FVector DeltaLocation(0.f);
+    FVector DeltaLocation = FVector::ZeroVector;
     DeltaLocation.X = Value;
 
-    AddActorWorldOffset(DeltaLocation);
+    AddActorLocalOffset(DeltaLocation);
 
     UE_LOG(LogTemp, Warning, TEXT("Value: %f"), Value);
 }
