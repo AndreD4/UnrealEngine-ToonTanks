@@ -33,8 +33,10 @@ void ATank::Move(float Value)
     AddActorLocalOffset(DeltaLocation, true);
 }
 
-void ATank::Turn(flaot Value)
+void ATank::Turn(float Value)
 {
     FRotator DeltaRotation = FRotator::ZeroRotator;
     // Yaw = Value * DeltaTime * Speed
+    DeltaRotation.Yaw = Value * TurnRate * UGameplayStatics::GetWorldDeltaSeconds(this);
+    AddActorLocalRotation(DeltaRotation, true);
 }

@@ -30,7 +30,7 @@ private:
     float Speed = 200.f;
 
     UPROPERTY(EditAnywhere, Category = "Movement")
-    float TrunRate = 200.f;
+    float TurnRate = 200.f;
 
     void Move(float Value);
     void Turn(float Value);
