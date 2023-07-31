@@ -30,6 +30,7 @@ void ATank::BeginPlay()
 {
 	Super::BeginPlay();
 
+  PlayerControllerRef = Cast<APlayerController>(GetController());
 }
 
 void ATank::Move(float Value)
