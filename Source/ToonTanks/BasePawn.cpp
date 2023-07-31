@@ -4,7 +4,7 @@
 #include "BasePawn.h"
 #include "Components/CapsuleComponent.h"
 
-// Sets default values
+// Sets default values 
 ABasePawn::ABasePawn()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -22,15 +22,6 @@ ABasePawn::ABasePawn()
   ProjectileSpawnPoint = CreateDefaultSubobject<USceneComponent>(TEXT("Sapwn Point"));
   ProjectileSpawnPoint->SetupAttachment(TurretMesh);
 }
-
-// Called when the game starts or when spawned
-void ABasePawn::BeginPlay()
-{
-	Super::BeginPlay();
-
-}
-
-
 
 // Called every frame
 void ABasePawn::Tick(float DeltaTime)
