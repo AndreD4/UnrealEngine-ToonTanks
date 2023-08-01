@@ -12,7 +12,7 @@ void ATower::Tick(float DeltaTime)
     // Find the distance to the tank
     if(Tank)
     {
-      float Distance = FVector::Dist(GetActorLocation(), Tank->GetActorLocation)
+      float Distance = FVector::Dist(GetActorLocation(), Tank->GetActorLocation());
     }
     
     // Check to see if the tank is in range
