@@ -3,8 +3,7 @@
 #include "HealthComponent.h"
 #include "GameFramework/Actor.h"
 #include "Kismet/GameplayStatics.h"
-#include "ToonTanksGameMode.h"
-
+#include "ToonTankGameMode.h"
 
 // Sets default values for this component's properties
 UHealthComponent::UHealthComponent()
@@ -45,5 +44,6 @@ void UHealthComponent::DamageTaken(AActor *DamagedActor, float Damage, const UDa
 		ToonTanksGameMode->ActorDied(DamagedActor);
 	}
 }
+
 
 
